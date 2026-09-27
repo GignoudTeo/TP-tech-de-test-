@@ -10,6 +10,8 @@ Test Unitaires:
             certains points sont alignés mais la triangulation fonctionne bien pour autant;
             Les Triangles correspond bien au PointSet initial
             Les Triangles est bien le resultat attendu 
+            Les Triangles est le bon format
+            PointSet non conforme nombre de points dans l'entête != nombre points dans le reste du PointSet -> erreur Point set non conforme
     -   Test de triangulation raté 
         -   différents cas :  pas de points -> erreur de PointSet taille insuffisante pas de calcul
             un point -> erreur de PointSet taille insuffisante pas de calcul 
@@ -30,7 +32,10 @@ Test Unitaires:
             le UUID est dans le bon format
         - Communication avec le client raté :
             Le UUID est vide -> Erreur UUID vide 
-            le UUID n'est pas dans le bon format -> Erreur de Format UUID
+            Le UUID n'est pas dans le bon format -> Erreur de Format UUID
+            Le point Set Manager est injoignable -> erreur de communication / service injoignable 
+            PSM bien repondu mais données corronpu ou mauvais format -> erreur de communcation 
+
             
             
 
@@ -46,8 +51,10 @@ Test Unitaires:
     -   
 
 Tests de Performance :
-    -
+    -Temps d'exec pour 10; 100 ; 1000; 100000 ;
+
 Test de Couverture
-    - 
-Tests de Qualité
-    -
+    - coverage run tout le code doit etre couvert
+Tests de Qualité et doc 
+
+    -ruff check et pdoc3
