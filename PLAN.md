@@ -11,7 +11,7 @@ Test Unitaires:
             Les Triangles correspond bien au PointSet initial
             Les Triangles est bien le resultat attendu 
             Les Triangles est le bon format
-            PointSet non conforme nombre de points dans l'entête != nombre points dans le reste du PointSet -> erreur Point set non conforme
+            
     -   Test de triangulation raté 
         -   différents cas :  pas de points -> erreur de PointSet taille insuffisante pas de calcul
             un point -> erreur de PointSet taille insuffisante pas de calcul 
@@ -23,6 +23,7 @@ Test Unitaires:
             Le Triangle n'a pas la bonne taille -> erreur de Triangulation
             les Triangles est vide -> Erreur Triangulation
             les Triangles pas dans le bon format -> Erreur conversion Triangle 
+            PointSet non conforme nombre de points dans l'entête != nombre points dans le reste du PointSet -> erreur Point set non conforme
 
    
    
@@ -34,12 +35,7 @@ Test Unitaires:
             Le UUID est vide -> Erreur UUID vide 
             Le UUID n'est pas dans le bon format -> Erreur de Format UUID
             Le point Set Manager est injoignable -> erreur de communication / service injoignable 
-            PSM bien repondu mais données corronpu ou mauvais format -> erreur de communcation 
-
-            
-            
-
-        
+            PSM bien repondu mais données corronpu ou mauvais format -> erreur de communcation  
         - Communication avec le SetPointManager reussi :
             Le SPM renvoie bien un SetPoint en echange du UUID
             Le SetPoint est dans le bon format
