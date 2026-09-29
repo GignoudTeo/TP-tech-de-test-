@@ -39,4 +39,9 @@ def test_triangulation_plus_de4points_reussi():
         
     )
     assert triangulation(point_set_bytes) == None # result expected "
-    
+
+#def test_triangulation_certainspoints_alignés_reussi():
+#def test_triangulation_debutTriangles_PointSetinitial_reussi():
+#def test_triangulation_bonformat_reussi():
+#def test_pas_de_points_echec():
+#def test_un_point_echec():
