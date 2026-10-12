@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch
-from triangulationur.app import app
+from triangulateur.app import app
 
 @pytest.fixture
 def client():
