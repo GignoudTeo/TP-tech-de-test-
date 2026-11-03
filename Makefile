@@ -10,7 +10,7 @@ perf_test:
 	pytest -m "perf"
 
 coverage:
-	coverage run -m pytest
+	-coverage run --source=triangulateur -m pytest -m "not perf"
 	coverage report -m
 
 lint:
